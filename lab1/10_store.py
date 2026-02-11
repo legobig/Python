@@ -1,17 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-# Есть словарь кодов товаров
-
 goods = {
     'Лампа': '12345',
     'Стол': '23456',
     'Диван': '34567',
     'Стул': '45678',
 }
-
-# Есть словарь списков количества товаров на складе.
-
 store = {
     '12345': [
         {'quantity': 27, 'price': 42},
@@ -31,25 +23,44 @@ store = {
     ],
 }
 
-# Рассчитать на какую сумму лежит каждого товара на складе
-# например для ламп
-
-lamps_cost = store[goods['Лампа']][0]['quantity'] * store[goods['Лампа']][0]['price']
-# или проще (/сложнее ?)
 lamp_code = goods['Лампа']
-lamps_item = store[lamp_code][0]
-lamps_quantity = lamps_item['quantity']
-lamps_price = lamps_item['price']
-lamps_cost = lamps_quantity * lamps_price
-print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб')
+lamp_qty = store[lamp_code][0]['quantity']
+lamp_price = store[lamp_code][0]['price']
+lamp_cost = lamp_qty * lamp_price
+print('Лампа - ',lamp_qty,' шт, стоимость ',lamp_cost,' руб')
 
-# Вывести стоимость каждого вида товара на складе:
-# один раз распечать сколько всего столов и их общая стоимость,
-# один раз распечать сколько всего стульев и их общая стоимость,
-#   и т.д. на складе
-# Формат строки <товар> - <кол-во> шт, стоимость <общая стоимость> руб
+table_code = goods['Стол']
+table_qty1 = store[table_code][0]['quantity']
+table_price1 = store[table_code][0]['price']
+table_cost1 = table_qty1 * table_price1
+table_qty2 = store[table_code][1]['quantity']
+table_price2 = store[table_code][1]['price']
+table_cost2 = table_qty2 * table_price2
+table_qty = table_qty1 + table_qty2
+table_cost = table_cost1 + table_cost2
+print('Стол - ',table_qty,' шт, стоимость ',table_cost,' руб')
 
-# WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
-# Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
+sofa_code = goods['Диван']
+sofa_qty1 = store[sofa_code][0]['quantity']
+sofa_price1 = store[sofa_code][0]['price']
+sofa_cost1 = sofa_qty1 * sofa_price1
+sofa_qty2 = store[sofa_code][1]['quantity']
+sofa_price2 = store[sofa_code][1]['price']
+sofa_cost2 = sofa_qty2 * sofa_price2
+sofa_qty = sofa_qty1 + sofa_qty2
+sofa_cost = sofa_cost1 + sofa_cost2
+print('Диван - ',sofa_qty,' шт, стоимость ',sofa_cost,' руб')
 
-# TODO здесь ваш код
+chair_code = goods['Стул']
+chair_qty1 = store[chair_code][0]['quantity']
+chair_price1 = store[chair_code][0]['price']
+chair_cost1 = chair_qty1 * chair_price1
+chair_qty2 = store[chair_code][1]['quantity']
+chair_price2 = store[chair_code][1]['price']
+chair_cost2 = chair_qty2 * chair_price2
+chair_qty3 = store[chair_code][2]['quantity']
+chair_price3 = store[chair_code][2]['price']
+chair_cost3 = chair_qty3 * chair_price3
+chair_qty = chair_qty1 + chair_qty2 + chair_qty3
+chair_cost = chair_cost1 + chair_cost2 + chair_cost3
+print('Стул - ',chair_qty,' шт, стоимость ',chair_cost,' руб')
