@@ -7,8 +7,8 @@ my_family_height = [
     ['бабушка', 160],
 ]
 
-print(f"Рост отца - {my_family_height[0][1]} см")
+print('Рост отца - ',my_family_height[0][1],'см')
 height = 0
 for person in my_family_height:
     height += person[1]
-print(f"Общий рост моей семьи - {height} см")
+print('Общий рост моей семьи -',height,'см')
