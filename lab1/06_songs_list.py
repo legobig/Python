@@ -16,7 +16,7 @@ clean= violator_songs_list[8][1]
 total = halo + enjoy + clean
 total_time= round(total, 2)
 
-print(f'Три песни звучат {total_time} минут')
+print('Три песни звучат',total_time,'минут')
 violator_songs_dict = {
     'World in My Eyes': 4.76,
     'Sweetest Perfection': 4.43,
@@ -33,4 +33,4 @@ policy= violator_songs_dict['Policy of Truth']
 blue= violator_songs_dict['Blue Dress']
 total = sweetest + policy + blue
 total_time= round(total, 2)
-print(f'А другие три песни звучат {total_time} минут')
+print('А другие три песни звучат',total_time,'минут')
