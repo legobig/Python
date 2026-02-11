@@ -8,5 +8,5 @@ zoo.remove('elephant')
 print(zoo)
 lion_index = zoo.index('lion') + 1
 lark_index = zoo.index('lark') + 1
-print(f"Лев-{lion_index}")
-print(f"Жаворонок-{lark_index}")
+print('Лев-',lion_index)
+print('Жаворонок-',lark_index)
