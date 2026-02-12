@@ -12,7 +12,7 @@ for city1 in sites:
         x2,y2=sites[city2]
         dist = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
         distances[city1,city2]= round(dist, 2)
-print(distances) исправление
+print(distances)
 
 
 
