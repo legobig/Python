@@ -158,7 +158,8 @@ violator_songs_list = [
     ['Enjoy the Silence', 4.20],
     ['Policy of Truth', 4.76],
     ['Blue Dress', 4.29],
-    ['Clean', 5.83],]
+    ['Clean', 5.83],
+]
 распечатайте общее время звучания трех песен: 'Halo', 'Enjoy the Silence' и 'Clean' в формате
 
 # Результаты вычислений:
