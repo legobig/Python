@@ -477,3 +477,4 @@ print('Стул - ',chair_qty,' шт, стоимость ',chair_cost,' руб')
 
 # Список использованных источников:
 1. [Python](https://www.python.org/)
+2. [Пример отчёта в Markdown](https://github.com/still-coding/report_demo?tab=readme-ov-file)
