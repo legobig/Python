@@ -24,8 +24,7 @@ for city1 in sites:
         distances[city1,city2]= round(dist, 2)
 print(distances)
 ```
-<img width="1671" height="50" alt="image" src="https://github.com/user-attachments/assets/33387592-b69f-49ed-82ad-db5d2600c67d" />
-
+<img width="1662" height="37" alt="image" src="https://github.com/user-attachments/assets/13411959-897d-4069-8421-894b2dee85c3" />
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов
 2.Выполнено округление результатов для удобства восприятия
@@ -56,6 +55,8 @@ point_2 = (30, 30)
 distance_2=sqrt(point_2[0]**2+point_2[1]**2)
 print(distance_2 <= radius)
 ```
+<img width="103" height="59" alt="image" src="https://github.com/user-attachments/assets/435dafe4-e8b2-43ca-a5ef-277c07a5da77" />
+
 Площадь круга вычислена корректно с заданной точностью
 Для проверки принадлежности точки кругу корректнее использовать сравнение квадратов расстояний: x² + y² ≤ R², чтобы избежать погрешностей при извлечении корня
 
@@ -71,6 +72,8 @@ print(distance_2 <= radius)
 result =1*(2+3)+4*5
 print(result)
 ```
+<img width="70" height="22" alt="image" src="https://github.com/user-attachments/assets/ea2c1059-30da-4048-bab3-4c0926f5dfba" />
+
 # 4. Задание:
 Есть строка с перечислением фильмов
 my_favorite_movies = 'Терминатор, Пятый элемент, Аватар, Чужие, Назад в будущее'
@@ -91,6 +94,8 @@ print(my_favorite_movies[12:25])
 
 print(my_favorite_movies[-22:-17])
 ```
+<img width="148" height="74" alt="image" src="https://github.com/user-attachments/assets/7d6316cc-6ac8-46dd-8e78-d09eebb613ce" />
+
 1.В данном задании индексы подобраны вручную на основе фиксированной структуры строки
 2.При работе с реальными данными, где позиции могут меняться, предпочтительнее использовать методы split(), find() или регулярные выражения
 
@@ -118,6 +123,8 @@ for person in my_family_height:
     height += person[1]
 print('Общий рост моей семьи -',height,'см')
 ```
+<img width="270" height="38" alt="image" src="https://github.com/user-attachments/assets/b2d03421-01a1-4e2d-93b7-b5c7a0e653ba" />
+
 1.Освоены базовые операции со вложенными списками
 2.Реализован перебор элементов списка с накоплением суммы
 
@@ -145,6 +152,8 @@ lark_index = zoo.index('lark') + 1
 print('Лев-',lion_index)
 print('Жаворонок-',lark_index)
 ```
+<img width="667" height="88" alt="image" src="https://github.com/user-attachments/assets/7cbb2053-90cb-4856-873b-fbc82f890386" />
+
 1.Освоены основные методы работы со списками: insert(), extend(), remove(), index()
 
 # 7. Задание:
@@ -204,6 +213,8 @@ total = sweetest + policy + blue
 total_time= round(total, 2)
 print('А другие три песни звучат',total_time,'минут')
 ```
+<img width="321" height="36" alt="image" src="https://github.com/user-attachments/assets/ddc475a1-865d-4641-b748-88c17ba6bebf" />
+
 1.Освоены два способа хранения данных: списки и словари
 2.Преимущества словарей при работе с именованными данными — код становится более понятным и устойчивым к изменениям порядка элементов
 
@@ -240,6 +251,8 @@ w5 = secret_message[4][16:21][::-1]
 result = f"{w1} {w2} {w3} {w4} {w5}"
 print(result)
 ```
+<img width="229" height="21" alt="image" src="https://github.com/user-attachments/assets/be77a9ee-4a66-491b-8d44-efb0a5ac75a6" />
+
 1.Освоены различные приёмы работы со срезами строк
 
 # 9. Задание:
@@ -271,6 +284,8 @@ print("Цветы, которые растут только в саду:", garde
 
 print("Цветы, которые растут только на лугу:", meadow_set - garden_set)
 ```
+<img width="753" height="72" alt="image" src="https://github.com/user-attachments/assets/9f7f205a-e5b4-4990-a7aa-05ae142d9817" />
+
 1.Освоены основные операции над множествами
 
 
@@ -347,6 +362,8 @@ sweets = {
 
 print(sweets)
 ```
+<img width="1661" height="37" alt="image" src="https://github.com/user-attachments/assets/207abdd1-4d75-40ea-a772-1b1a0d458795" />
+
 1.Реализован алгоритм, корректно обрабатывающий все продукты из всех магазинов
 2.Полученная структура позволяет легко анализировать цены на конкретные продукты в разных магазинах
 
@@ -453,6 +470,8 @@ chair_qty = chair_qty1 + chair_qty2 + chair_qty3
 chair_cost = chair_cost1 + chair_cost2 + chair_cost3
 print('Стул - ',chair_qty,' шт, стоимость ',chair_cost,' руб')
 ```
+<img width="347" height="75" alt="image" src="https://github.com/user-attachments/assets/d2badcb6-c285-48a4-9e30-0d206138123c" />
+
 1.Освоены механизмы доступа к данным во вложенных структурах
 2.Недостаток такой реализации - дубликация одной и той же логики
 
