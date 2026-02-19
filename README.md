@@ -24,7 +24,7 @@ for city1 in sites:
         distances[city1,city2]= round(dist, 2)
 print(distances)
 ```
-<img width="640" height="480" alt="convergence_plot" src="https://github.com/user-attachments/assets/c065230c-dfbf-4318-b50e-c249cb276662" />
+
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов
 2.Выполнено округление результатов для удобства восприятия
