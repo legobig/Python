@@ -168,7 +168,7 @@ violator_songs_list = [<br>
     ['Halo', 4.9],<br>
     ['Waiting for the Night', 6.07],<br>
     ['Enjoy the Silence', 4.20],<br>
-    ['Policy of Truth', 4.76],<br><br>
+    ['Policy of Truth', 4.76],<br>
     ['Blue Dress', 4.29],<br>
     ['Clean', 5.83],<br>
 ]<br>
