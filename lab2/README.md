@@ -45,7 +45,7 @@ print(b.count('1'))
 from math import*
 def f(x):
     a=[]
-    for i in range(2,int(sqrt(x))+1):
+    for i in range(2,int(sqrt(x))):
         if x%i==0:
             a.append(i)
             a.append(x//i)
@@ -73,6 +73,7 @@ git clone-скачивает копию репозитория на компью
 # Список использованных источников:
 1. [Itertools в Python](https://habr.com/ru/companies/otus/articles/529356/)
 2. [Пример отчёта в Markdown](https://github.com/still-coding/report_demo?tab=readme-ov-file)
+
 
 
 
