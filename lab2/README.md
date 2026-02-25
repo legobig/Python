@@ -71,8 +71,9 @@ git clone-скачивает копию репозитория на компью
 
 
 # Список использованных источников:
-1. [Itertools в Python]([https://www.python.org/](https://habr.com/ru/companies/otus/articles/529356/))
+1. [Itertools в Python](https://habr.com/ru/companies/otus/articles/529356/)
 2. [Пример отчёта в Markdown](https://github.com/still-coding/report_demo?tab=readme-ov-file)
+
 
 
 
