@@ -39,20 +39,24 @@ print(b.count('1'))
 ```
 # Результаты вычислений:
 ```python
-from itertools import*
-p=product('еиймотф',repeat=5)
-k=0
-for x in p:
-    s=''.join(x)
-    if s.count('й')<=1 and 'ий'not in s and 'йи'not in s and s[0]!='й' and s[4]!='й':
-        k+=1
-print(k)    
+from math import*
+def f(x):
+    a=[]
+    for i in range(2,int(sqrt(x))+1):
+        if x%i==0:
+            a.append(i)
+            a.append(x//i)
+    return sorted(set(a))
+for x in range(174457,174505+1):
+    if len(f(x))==2:
+        print(*f(x))  
 ```
 <img width="1662" height="37" alt="image" src="https://github.com/user-attachments/assets/13411959-897d-4069-8421-894b2dee85c3" />
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов<br>
 2.Выполнено округление результатов для удобства восприятия <br>
 3.Получен словарь, содержащий полную матрицу расстояний <br>
+
 
 
 
