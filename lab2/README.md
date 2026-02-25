@@ -11,7 +11,8 @@ for x in p:
         k+=1
 print(k)    
 ```
-<img width="1662" height="37" alt="image" src="https://github.com/user-attachments/assets/13411959-897d-4069-8421-894b2dee85c3" />
+<img width="199" height="41" alt="image" src="https://github.com/user-attachments/assets/7de89470-ee9c-4719-bb00-a5bead353076" />
+
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов<br>
 2.Выполнено округление результатов для удобства восприятия <br>
@@ -25,7 +26,8 @@ s=4**2020+2**2017-15
 b=bin(s)[2:]
 print(b.count('1')) 
 ```
-<img width="1662" height="37" alt="image" src="https://github.com/user-attachments/assets/13411959-897d-4069-8421-894b2dee85c3" />
+<img width="134" height="41" alt="image" src="https://github.com/user-attachments/assets/c853ce41-96f5-4db3-a684-54ed379e7096" />
+
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов<br>
 2.Выполнено округление результатов для удобства восприятия <br>
@@ -51,11 +53,13 @@ for x in range(174457,174505+1):
     if len(f(x))==2:
         print(*f(x))  
 ```
-<img width="1662" height="37" alt="image" src="https://github.com/user-attachments/assets/13411959-897d-4069-8421-894b2dee85c3" />
+<img width="158" height="254" alt="image" src="https://github.com/user-attachments/assets/97e7f091-9546-4495-9334-1d7b5c9d939f" />
+
 
 1.Реализован алгоритм вычисления евклидова расстояния между всеми парами городов<br>
 2.Выполнено округление результатов для удобства восприятия <br>
 3.Получен словарь, содержащий полную матрицу расстояний <br>
+
 
 
 
