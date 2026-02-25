@@ -11,7 +11,8 @@ for x in p:
         k+=1
 print(k)    
 ```
-<img width="199" height="41" alt="image" src="https://github.com/user-attachments/assets/7de89470-ee9c-4719-bb00-a5bead353076" />
+<img width="103" height="41" alt="image" src="https://github.com/user-attachments/assets/6c515053-e22c-4cf3-beb0-9668ccff6aa6" />
+
 
 
 1.Реализован полный перебор всех 5-буквенных комбинаций с помощью ```product```<br>
@@ -25,7 +26,8 @@ s=4**2020+2**2017-15
 b=bin(s)[2:]
 print(b.count('1')) 
 ```
-<img width="134" height="41" alt="image" src="https://github.com/user-attachments/assets/c853ce41-96f5-4db3-a684-54ed379e7096" />
+<img width="81" height="30" alt="image" src="https://github.com/user-attachments/assets/14020a8d-81fb-4e24-bbe1-9aedc6dae6d3" />
+
 
 
 1.Число переведено в двоичную систему функцией ```bin```<br>
@@ -52,12 +54,14 @@ for x in range(174457,174505+1):
     if len(f(x))==2:
         print(*f(x))  
 ```
-<img width="158" height="254" alt="image" src="https://github.com/user-attachments/assets/97e7f091-9546-4495-9334-1d7b5c9d939f" />
+<img width="167" height="242" alt="image" src="https://github.com/user-attachments/assets/5dec5e30-0733-4072-bbfa-611d5a1b0b05" />
+
 
 
 1.Реализована функция нахождения делителей числа перебором до корня<br>
 2.Проверено условие наличия ровно двух таких делителей<br>
 3.Получен список пар делителей для всех подходящих чисел диапазона<br>
+
 
 
 
