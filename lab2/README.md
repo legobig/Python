@@ -69,11 +69,13 @@ git commit-сохраняет файлы<br><br>
 git push-отправялет сохраненные коммиты из компьютера в репозиторий<br><br>
 git status-показывает текущее состояние рабочей папки<br><br>
 git clone-скачивает копию репозитория на компьютер<br><br>
+git pull -предназначен для получения изменений из репозитория<br><br>
 
 
 # Список использованных источников:
 1. [Itertools в Python](https://habr.com/ru/companies/otus/articles/529356/)
 2. [Пример отчёта в Markdown](https://github.com/still-coding/report_demo?tab=readme-ov-file)
+
 
 
 
