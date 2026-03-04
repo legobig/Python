@@ -9,4 +9,5 @@ def f(n):
             if isinstance(i, list):
                 s.append(i)
     return total
-print(f([1, 2, [3, 4]]))
+print (f([1, 2, [3, 4, [5]]]))
+
