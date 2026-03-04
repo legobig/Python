@@ -84,5 +84,5 @@ print(f(3))
 
 
 # Список использованных источников:
-1. [Itertools в Python](https://habr.com/ru/companies/otus/articles/529356/)
-2. [Пример отчёта в Markdown](https://github.com/still-coding/report_demo?tab=readme-ov-file)
+1. [Рекурсии в Python]([https://habr.com/ru/companies/otus/articles/529356/](https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-13-rekursivnye-funkcii-2023-01-23))
+2. [Функция isinstance () в Python](https://thecode.media/funkciya-isinstance-v-python/)
