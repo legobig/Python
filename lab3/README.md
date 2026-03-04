@@ -2,6 +2,7 @@
 # 1. Задание:
 Функция для подсчёта числа элементов в списках, включая вложенные списки
 # Результаты вычислений:
+Рекурсия
 ```python
 def f(x):
     total = 0
@@ -12,6 +13,21 @@ def f(x):
     return total
 print (f([1, 2, [3, 4, [5]]]))
 print(k)    
+```
+Без рекурсии
+```python
+def f(n):
+    total = 0
+    s = [n]
+
+    while s:
+        current = s.pop()
+        for i in current:
+            total += 1
+            if isinstance(i, list):
+                s.append(i)
+    return total
+print (f([1, 2, [3, 4, [5]]]))
 ```
 <img width="28" height="35" alt="image" src="https://github.com/user-attachments/assets/da316ad9-c1c2-4d54-9c25-fd676865d169" />
 
