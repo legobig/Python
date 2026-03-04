@@ -40,6 +40,23 @@ print (f([1, 2, [3, 4, [5]]]))
 # 2. Задание:
 Функция для расчёта \( x_i = \frac{(i-1)x_{i-1}}{3} + \frac{(i-2)x_{i-2}}{4} \). \( x_1 = 1, x_2 = -\frac{1}{8} \).
 # Результаты вычислений:
+Рекурсия
+``python
+def f(n):
+    total = 0
+    s = [n]
+
+    while s:
+        current = s.pop()
+        for i in current:
+            total += 1
+            if isinstance(i, list):
+                s.append(i)
+    return total
+print (f([1, 2, [3, 4, [5]]]))
+```
+
+Без рекурсии
 ```python
 def f(n):
     if n == 1:
