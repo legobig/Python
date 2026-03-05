@@ -11,8 +11,7 @@ def f(x):
         if isinstance(i, list):
             total += f(i)
     return total
-print (f([1, 2, [3, 4, [5]]]))
-print(k)    
+print (f([1, 2, [3, 4, [5]]]))   
 ```
 Без рекурсии
 ```python
