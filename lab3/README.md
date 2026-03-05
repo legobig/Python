@@ -42,18 +42,15 @@ print (f([1, 2, [3, 4, [5]]]))
 # Результаты вычислений:
 Рекурсия
 ```python
-def f(n):
-    total = 0
-    s = [n]
+def f(i):
+    if i == 1:
+        return 1
+    if i == 2:
+        return -1/8
+    
+    return ((i-1) * f(i-1)) / 3 + ((i-2) * f(i-2)) / 4
+print(f(3))
 
-    while s:
-        current = s.pop()
-        for i in current:
-            total += 1
-            if isinstance(i, list):
-                s.append(i)
-    return total
-print (f([1, 2, [3, 4, [5]]]))
 ```
 
 Без рекурсии
