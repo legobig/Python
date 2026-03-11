@@ -1,83 +1,74 @@
 # 1 ВАРИАНТ
 # 1. Задание:
-Функция для подсчёта числа элементов в списках, включая вложенные списки
+Замыкание-калькулятор, накапливающее результат и поддерживающее 4 арифметичесике операции:
+```python
+>>> calc = make_calc("*", initial=1)
+>>> calc(5)
+5
+>>> calc(2)
+10
+```
 # Результаты вычислений:
-Рекурсия
 ```python
-def f(x):
-    total = 0
-    for i in x:
-        total+=1
-        if isinstance(i, list):
-            total += f(i)
-    return total
-print (f([1, 2, [3, 4, [5]]]))   
+import operator
+def make_calc(op, i=0):
+    ops = {"+": operator.add,"-": operator.sub,
+           "*": operator.mul,"/": operator.truediv}
+
+    result = i
+
+    def calc(value):
+        nonlocal result
+        result = ops[op](result, value)
+        return result
+
+    return calc
+c = make_calc("*", i=1)
+print(c(5))
+print(c(2))
+print(c(5))  
 ```
-Без рекурсии
-```python
-def f(n):
-    total = 0
-    s = [n]
-
-    while s:
-        current = s.pop()
-        for i in current:
-            total += 1
-            if isinstance(i, list):
-                s.append(i)
-    return total
-print (f([1, 2, [3, 4, [5]]]))
-```
-<img width="28" height="35" alt="image" src="https://github.com/user-attachments/assets/da316ad9-c1c2-4d54-9c25-fd676865d169" />
+<img width="41" height="91" alt="image" src="https://github.com/user-attachments/assets/514eb574-47d7-46b0-a6a8-5e530c45571c" />
 
 
 
 
-1.Рекурсивная функция содержит - двойной подсчет списков<br>
-2.Стек эффективно имитирует рекурсию, но без риска переполнения <br>
+
+1. Внутренняя функция calc сохраняет доступ к переменной result даже после завершения внешней функции make_calc<br>
+2. Каждый вызов изменяет сохранённое значение <br>
 
 # 2. Задание:
-Функция для расчёта \( x_i = \frac{(i-1)x_{i-1}}{3} + \frac{(i-2)x_{i-2}}{4} \). \( x_1 = 1, x_2 = -\frac{1}{8} \).
+Декоратор, который будет запускать функцию указанное число раз с указанными параметрами и возвращать последвательность результатов.
 # Результаты вычислений:
 Рекурсия
 ```python
-def f(i):
-    if i == 1:
-        return 1
-    if i == 2:
-        return -1/8
-    
-    return ((i-1) * f(i-1)) / 3 + ((i-2) * f(i-2)) / 4
-print(f(3))
-
+def r(times, a1,a2):
+    def decorator(func):
+        def wrapper():
+            results = []
+            for i in range(times):
+                results.append(func(a1,a2))
+            return results
+        return wrapper
+    return decorator
+@r(10, 4, 3)
+def add(a, b):
+    return a + b
+print(add())
 ```
 
-Без рекурсии
-```python
-def f(n):
-    if n == 1:
-        return 1
-    if n == 2:
-        return -1/8
-    x_pred = 1  
-    x_pos = -1/8     
-    for i in range(3,n+1):
-        x = ((i-1)*x_pos)/3 + ((i - 2) * x_pred)/4
-        x_pred=x_pos
-        x_pos=x
-    return x_pos
-print(f(3))
-```
-<img width="315" height="42" alt="image" src="https://github.com/user-attachments/assets/fa71fe8a-3d28-4239-9f56-9a7d00ed529e" />
+<img width="492" height="41" alt="image" src="https://github.com/user-attachments/assets/f0daf3ce-a7e1-4cce-801a-e4f933a73034" />
 
 
 
 
-1.Рекурсия ограничена глубиной стека и может быть крайне неэффективной при множественных повторных вызовах<br>
-2.Итеративные методы требуют больше кода, но они не ограничены глубиной рекурсии и более эффективны по памяти и времени<br>
+
+
+1.Функция add() вызывается без аргументов, хотя исходная функция требует два параметра<br>
+2.Все результаты сохраняются в список, даже если они одинаковые<br>
 
 
 
 # Список использованных источников:
-1. [Рекурсии в Python](https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-13-rekursivnye-funkcii-2023-01-23)
-2. [Функция isinstance () в Python](https://thecode.media/funkciya-isinstance-v-python/)
+1. [Operator в Python](https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-13-rekursivnye-funkcii-2023-01-23)
+2. [Декораторы в Python](https://tproger.ru/translations/demystifying-decorators-in-python)
