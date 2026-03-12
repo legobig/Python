@@ -41,19 +41,24 @@ print(c(5))
 Декоратор, который будет запускать функцию указанное число раз с указанными параметрами и возвращать последвательность результатов.
 # Результаты вычислений:
 ```python
-def r(times, a1,a2):
+def r(times):
     def decorator(func):
-        def wrapper():
+        def wrapper(a1,a2):
             results = []
             for i in range(times):
                 results.append(func(a1,a2))
             return results
         return wrapper
     return decorator
-@r(10, 4, 3)
-def add(a, b):
-    return a + b
-print(add())
+@r(10)
+def make_add(a, b):
+    
+    def add():
+        return a + b
+    return add
+
+print(make_add(4,3))
+
 ```
 
 <img width="492" height="41" alt="image" src="https://github.com/user-attachments/assets/f0daf3ce-a7e1-4cce-801a-e4f933a73034" />
