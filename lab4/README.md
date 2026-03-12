@@ -11,15 +11,15 @@
 # Результаты вычислений:
 ```python
 import operator
-def make_calc(op, i=0):
-    ops = {"+": operator.add,"-": operator.sub,
+def make_calc(a, i=0):
+    op = {"+": operator.add,"-": operator.sub,
            "*": operator.mul,"/": operator.truediv}
 
     result = i
 
     def calc(value):
         nonlocal result
-        result = ops[op](result, value)
+        result = op[a](result, value)
         return result
 
     return calc
