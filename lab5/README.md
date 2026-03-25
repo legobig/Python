@@ -48,4 +48,4 @@ print("После фильтрации:", result)
 
 
 # Список использованных источников:
-1. [yield в Python]([https://proglib.io/p/samouchitel-po-python-dlya-nachinayushchih-chast-13-rekursivnye-funkcii-2023-01-23](https://habr.com/ru/articles/132554/))
+1. [yield в Python](https://habr.com/ru/articles/132554/)
