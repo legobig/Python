@@ -49,3 +49,4 @@ print("После фильтрации:", result)
 
 # Список использованных источников:
 1. [yield в Python](https://habr.com/ru/articles/132554/)
+2. [filter в Python](https://thecode.media/funkciya-filter-v-python/)
