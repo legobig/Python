@@ -112,7 +112,8 @@ tk.Button(root,
 root.mainloop()
 
 ```
-<img width="1514" height="74" alt="image" src="https://github.com/user-attachments/assets/62407969-6bf6-49d6-a1fa-a5bd83865f9f" />
+<img width="950" height="800" alt="image" src="https://github.com/user-attachments/assets/754a6304-4d26-42d5-8219-ca4f12d92813" />
+
 
 
 
@@ -127,5 +128,5 @@ root.mainloop()
 
 
 # Список использованных источников:
-1. [yield в Python](https://habr.com/ru/articles/132554/)
-2. [filter в Python](https://thecode.media/funkciya-filter-v-python/)
+1. [yield в Python](https://docs.python.org/3/library/tkinter.html)
+2. [filter в Python](https://thecode.media/biblioteka-tkinter-v-python/)
