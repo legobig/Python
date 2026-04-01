@@ -130,5 +130,5 @@ root.mainloop()
 
 
 # Список использованных источников:
-1. [tkinter](https://docs.python.org/3/library/tkinter.html)
-2. [tkinter](https://thecode.media/biblioteka-tkinter-v-python/)
+1. [tkinter — Python interface to Tcl/Tk](https://docs.python.org/3/library/tkinter.html)
+2. [Библиотека tkinter в Python](https://thecode.media/biblioteka-tkinter-v-python/)
