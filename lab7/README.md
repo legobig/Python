@@ -130,5 +130,5 @@ if __name__ == "__main__":
 
 
 # Список использованных источников:
-1. [Kivy — Python](https://docs.python.org/3/library/tkinter.html)
-2. [Библиотека tkinter в Python](https://thecode.media/biblioteka-tkinter-v-python/)
+1. [Kivy — Python](https://sky.pro/wiki/python/kivy-razrabotka-krossplatformennyh-prilozhenij-na-python/)
+2. [Kivy - Quick Guide](https://translated.turbopages.org/proxy_u/en-ru.ru.25080973-69dfbad0-696d39e5-74722d776562/https/www.tutorialspoint.com/kivy/kivy-quick-guide.htm)
