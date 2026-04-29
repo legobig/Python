@@ -112,7 +112,8 @@ class TodoApp:
 if __name__ == "__main__":
     TodoApp().run()
 ```
-<img width="402" height="452" alt="image" src="https://github.com/user-attachments/assets/2de9e2c9-58a3-45b6-8697-1dde1e936ed5" />
+<img width="402" height="452" alt="image" src="https://github.com/user-attachments/assets/a896dc10-004f-4dd6-96be-c505bc558d89" />
+
 
 
 
