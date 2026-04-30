@@ -11,18 +11,21 @@
 from appJar import gui
 
 class TaskError(Exception):
-    pass
+    def error(self, app):
+        app.errorBox("Ошибка", str(self))
 
 class TaskNotFoundError(TaskError):
-    pass
+    def error(self, app):
+        app.errorBox("Ошибка", "Выберите задачу")
 
 class EmptyError(TaskError):
-    pass
+    def error(self, app):
+        app.errorBox("Ошибка", "Задача не может быть пустой")
 
 class Task:
     def __init__(self, title):
         if not title.strip():
-            raise EmptyError("Задача не может быть пустой")
+            raise EmptyError()
         self.title = title
         self.completed = False
 
@@ -47,13 +50,13 @@ class TaskManager:
         try:
             del self.tasks[index]
         except IndexError:
-            raise TaskNotFoundError("Задача не найдена")
+            raise TaskNotFoundError()
 
     def complete_task(self, index):
         try:
             self.tasks[index].done()
         except IndexError:
-            raise TaskNotFoundError("Задача не найдена")
+            raise TaskNotFoundError()
 
     def get_tasks(self):
         return [str(task) for task in self.tasks]
@@ -82,29 +85,29 @@ class TodoApp:
             self.refresh_list()
             self.app.clearEntry("taskEntry")
         except TaskError as e:
-            self.app.errorBox("Ошибка", str(e))
+            e.error(self.app)
 
     def delete_task(self, btn):
         try:
             selected = self.app.getListBox("tasks")
             if not selected:
-                raise TaskNotFoundError("Выберите задачу")
+                raise TaskNotFoundError()
             index = self.manager.get_tasks().index(selected[0])
             self.manager.delete_task(index)
             self.refresh_list()
         except TaskError as e:
-            self.app.errorBox("Ошибка", str(e))
+            e.error(self.app)
 
     def complete_task(self, btn):
         try:
             selected = self.app.getListBox("tasks")
             if not selected:
-                raise TaskNotFoundError("Выберите задачу")
+                raise TaskNotFoundError()
             index = self.manager.get_tasks().index(selected[0])
             self.manager.complete_task(index)
             self.refresh_list()
         except TaskError as e:
-            self.app.errorBox("Ошибка", str(e))
+            e.error(self.app)
     def run(self):
         self.app.go()
 
